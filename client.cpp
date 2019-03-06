@@ -63,7 +63,6 @@ int main(int argc, char *argv[]) {
 		{
 			byteReceived += read(sockfd, &buffer[0 + byteReceived], numOfByteToReceive - byteReceived);
 		}
-		//printf("CLIENT RECEIVED: %d total bytes\n\n", buffer.size());
 
 		decodedMat = imdecode(Mat(buffer), 1);
 
